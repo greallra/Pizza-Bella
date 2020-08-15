@@ -1,0 +1,143 @@
+/* clearfix */
+*{ margin:0 }
+
+/* Main COlors */
+/* 
+Black #343031 
+Lighter Black #383733
+V Light Black #595959
+red #dd0301
+*/
+
+html, body{
+	height: 100%;
+	letter-spacing: 0.7px;
+	scroll-behavior: smooth;
+}
+
+body {
+   font-family: "Baskerville","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+#wrapper{
+	float: left;
+	width: 100%;
+	min-height: 100%;
+	/* background: palegreen; */
+	padding-bottom: 100px;
+	box-sizing: border-box;
+}
+
+header{
+	float: left;
+	width: 100%;
+}
+
+main{
+	float: left;
+	width: 100%;
+	height: auto;
+	background: lightsalmon;
+}
+
+footer {
+	float: left;
+	width: 100%;
+	height: 100px;
+	/* background: thistle; */
+	margin-top: -100px;
+}
+p {
+	color: #595959;
+    line-height: 27px;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 10px 0;
+    text-align: center;
+}
+h2 {
+	padding: 15px 0;
+	text-transform: uppercase;
+	font-size: 17px;
+	letter-spacing: 2px;
+}
+h3 {
+	padding-bottom: 22px;
+	font-weight: 600;
+	font-size: 22px;
+}
+h4 {
+	color: #343031 ;
+	
+	text-align: center;
+	font-size: 24px;
+	font-weight: 900;
+	margin: 5px 0 30px 0;
+}
+
+h5 {
+	font-size: 17px;
+	font-weight: 200;
+	color: #383733;
+	padding-bottom: 22px;
+}
+@media only screen and (min-width: 700px) {
+	h2 {
+		font-size: 27px;
+		padding: 15px 0 0 0;
+	}
+}
+@media only screen and (min-width: 1000px) {
+	h2 {
+		font-size: 47px;
+		padding: 15px 0 0 0;
+	}
+}
+a {
+	cursor: pointer;
+	color: #fff;
+	text-decoration: none;
+}
+ul {
+	list-style-type: none;
+
+}
+
+ /* Clear Float */
+ header::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+/* Relative position allows banner img to be positioned absolutely and relative to top section */
+.top-section {
+	position: relative;
+}
+#top-section-img {
+	width: 100%;
+	position: absolute;
+	z-index: -1;
+}
+/* mobile */
+@media only screen and (max-width: 700px) {
+	.top-section {
+		overflow: hidden;
+	}
+	#top-section-img {
+		width: auto;
+	}
+}
+
+#overlay-img {
+	background: url(../img/overlay.png);
+    opacity: .4;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#cover {position: fixed; height: 100%; width: 100%; top:0; left: 0; background: #000; z-index:9999;}

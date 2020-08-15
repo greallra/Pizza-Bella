@@ -1,0 +1,38 @@
+.catering-main {
+    padding: 30px;
+    max-width: 1200px;
+    margin: auto;
+}
+.title-section {
+    color: #343031;
+    text-align: center;
+}
+.number {
+    width: 200px;
+    margin: auto;
+}
+.number a {
+    background: #dd0301;
+    padding: 20px 10px;
+    display: block;
+    text-align: center;
+}
+.catering-img-cont img {
+    width: 100%;
+}
+.stars-cont {
+    text-align: center;
+}
+.stars-cont i {
+    padding: 20px 7px;
+    color: lightgray;
+}
+
+@media only screen and (min-width: 1000px) {
+    .catering-section {
+        float: left;
+        width: 50%;
+        box-sizing: border-box;
+        padding: 30px;
+    }
+}

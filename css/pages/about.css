@@ -1,0 +1,33 @@
+.about-main {
+    padding: 30px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.title-section {
+    color: #343031;
+    text-align: center;
+}
+
+.stars-cont {
+    text-align: center;
+}
+.stars-cont i {
+    padding: 20px 7px;
+    color: lightgray;
+}
+.about-img-cont {
+
+}
+.about-img-cont img {
+    width: 100%;
+}
+
+@media only screen and (min-width: 1000px) {
+    .our-story-section {
+        float: left;
+        width: 50%;
+        box-sizing: border-box;
+        padding: 30px;
+    }
+}

@@ -1,0 +1,25 @@
+.contact-section {
+    text-align: center;
+    padding: 20px;
+}
+.contact-section h6 {
+    font-size: 35px;
+    color: #343031;
+}
+.second-header {
+    font-size: 21px;
+}
+.address {
+    font-style: italic;
+}
+.hours {
+    text-decoration: underline;
+    font-weight: 700;
+}
+.time {
+    font-size: 17px;
+}
+.map {
+    max-width: 500px;
+    margin:  35px auto;
+}

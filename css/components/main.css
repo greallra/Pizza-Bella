@@ -1,0 +1,138 @@
+.opening-hours-section {
+    color: #fff;
+}
+.opening-hours-section {
+    text-align: center;
+    /* height: 500px; */
+    background: url('../../img/opening-hours.jpeg');
+    background-position: center; /* Center the image */
+    background-attachment: fixed;
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+}
+.opening-hours-section h3 {
+    padding: 10px 0 60px 0;
+}
+.title {
+    font-size: 30px;
+    padding-top: 30px;
+}
+.decorator {
+    max-width: 0;
+    color: #fff;
+}
+.opening-hours-section span, .title {
+    display: inline-block;
+    vertical-align: top;
+}
+/* Monday-Sunday */
+.opening-hours-section p:nth-child(2) {
+    color: #dd0301;
+    padding-bottom: 20px;
+    font-size: 35px;
+    font-style: italic;
+}
+/* Time */
+.opening-hours-section p:nth-child(3) {
+    font-size: 35px;
+    padding-bottom: 40px;
+    color: #fff;
+}
+
+
+.menu-section {
+    padding: 30px;
+    max-width: 1220px;
+    margin: 0 auto;
+}
+.menu-section::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+.menu-section h4 {
+    padding: 20px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 900;
+    margin: 30px 0;
+}
+
+.block {
+    padding: 25px 0;
+}
+.block h5 {
+    padding: 5px 0;
+    font-weight: 900;
+}
+.block p {
+    text-align: left;
+}
+.price-cont {
+    font-style: italic;
+    font-weight: 900;
+    white-space: nowrap;
+    float: right;
+}
+.price { 
+    color: #dd0301;
+    font-size: 16px;
+}
+.detail {
+    font-size: 15px;
+    font-weight: 500;
+    text-align: left;
+}
+.from {
+    font-size: 13px;
+    font-weight: 900;
+}
+.order-btn-section {
+    height: auto;
+    padding: 60px 0;
+}
+
+.order-btn {
+    display: block;
+    max-width: 200px;
+    text-align: center;
+    margin: auto;
+    color: #343031;
+    padding: 30px 60px;
+    border: 3px solid #343031;
+}
+.order-btn:hover {
+    background-color: #343031;
+    color: #fff;
+    transition: background-color 0.5s;
+    /* transition: color 1s; */
+}
+@media only screen and (min-width: 700px){
+    /* Monday-Sunday */
+    .opening-hours-section p:nth-child(2) {
+        color: #dd0301;
+        font-size: 45px;
+    }
+    /* Time */
+    .opening-hours-section p:nth-child(3) {
+        font-size: 45px;
+    }
+    .decorator {
+        max-width: 300px;
+        transition: max-width 0.5s;
+    }
+
+}
+@media only screen and (min-width: 900px){
+    .menu-column {
+        box-sizing: border-box;
+        float: left;
+        width: 33.3%;
+    }
+    .menu-column:nth-child(1) {
+        padding-right: 80px;
+    }
+    .menu-column:nth-child(2) {
+        padding-right: 80px;
+    }
+}

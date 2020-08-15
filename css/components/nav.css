@@ -1,0 +1,133 @@
+nav {
+    background: rgba(12,12,13,.78);
+    z-index: 1;
+    position: relative;
+}
+/* Clear Float */
+nav::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+nav ul {
+    list-style-type: none;
+    padding: 20px 50px;
+}
+nav ul::after  {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+#logo-nav {
+    width: 40px;
+}
+.desktop-nav li{
+    float: right;
+    height: 40px;
+}
+@media screen and (max-width: 1000px) {
+    .desktop-nav li{
+        display: none !important;
+     
+    }
+    /* Burger */
+    #burger-li, #logo-li  {
+        display: block !important;
+    }
+}
+/* Social Icons */
+nav ul li:nth-child(2) a, nav ul li:nth-child(3) a{
+    padding: 20px 7px;
+}
+nav ul li:nth-child(4) a {
+    padding: 20px 7px 20px 20px;
+}
+nav ul li:nth-child(3) {
+    /* padding: 20px 7px; */
+}
+nav ul li:nth-child(4) {
+    /* padding: 20px 7px; */
+}
+/* Logo */
+nav ul li:nth-child(11) {
+    margin-left: -20px;
+    display: block;
+    float: left;
+}
+
+nav ul li a{
+    cursor: pointer;
+    color: #fff;
+    font-weight: 600;
+    font-size: 11px;
+    padding: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    /* vertical-align: middle; */
+    line-height: 40px;
+} 
+nav ul li a:hover {
+    color:#cc0033;
+}
+.nav-dropdown-cont {
+    position: relative;
+
+}
+/* 760 */
+
+/* 1020 */
+@media screen and (min-width: 1000px) {
+    nav ul li{
+        display: block !important;
+    }
+    /* Burger */
+    #burger-li {
+        display: none !important;
+    }
+}
+
+/* MOBILE NAV */
+.mobile-nav {
+    max-height: 0;
+    overflow: hidden;
+    background: rgba(40,40,40,0.9);
+    z-index: 1;
+    position: absolute;
+    padding: 0;
+    top: 0;
+    left: 0px;
+    right: 0px;
+    transition: max-height 0.3s;
+}
+.mobile-nav-active {
+    /* Will online expand as high as necesssary */
+    max-height: 1000px;
+    transition: max-height 0.3s;
+}
+.mobile-nav li {
+    border-bottom: 1px solid rgba(30,30,30);;
+}
+.mobile-nav li:nth-child(6) {
+    border-bottom: none;
+}
+
+.mobile-nav li a {
+    display: block;
+    padding: 20px;
+}
+.mobile-nav li a:hover {
+    color:#cc0033 !important;
+}
+/* Socials */
+.mobile-nav li:nth-child(7) a {
+    box-sizing: border-box;
+    float: left;
+    width: 33%;
+    text-align: center;
+}
+@media screen and (min-width: 1000px) {
+    .mobile-nav li {
+       display: none !important;
+    }
+}

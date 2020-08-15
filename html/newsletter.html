@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="../img/logo-ico.png" type="image/gif" >
+        <title>Pizza Bella</title>
+        <link href='https://fonts.googleapis.com/css?family=Yellowtail%7cCabin:400,500,600,700,400italic,700italic%7cLibre+Baskerville:400italic%7cGreat+Vibes%7cOswald:400,300,700%7cOpen+Sans:600italic,700' rel='stylesheet' type='text/css'>
+        <script src="https://kit.fontawesome.com/3a615f6595.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="../css/base.css"> 
+        <link rel="stylesheet" href="../css/components/nav.css">
+        <link rel="stylesheet" href="../css/components/footer.css">
+        <link rel="stylesheet" href="../css/pages/newsletter.css">
+    </head>
+<body>
+    <!-- Nice page fade in -->
+    <div id="cover"></div>
+    <div id="wrapper">
+        <nav>
+            <ul class="desktop-nav">
+                <!-- Burger -->
+                <li id="burger-li"><a href="" id="burger"><i class="fas fa-bars fa-lg"></i></a></li>
+                <!-- social -->
+                <li><a href="" alt="external link to facebook page"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="" alt="external link to instagram page"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="" alt="external link to twitter page"><i class="fab fa-twitter"></i></a></li>
+                <!-- Pages -->
+                <li class="order"><a href="orders.html" alt="link to order online page">Order Online</a></li>
+                <li class="contact"><a href="contact.html" alt="link to contact page">Contact</a></li>
+                <li class="newsletter"><a href="newsletter.html" alt="link to newsletter page">Newsletter</a></li>
+                <li class="catering"><a href="catering.html" alt="link to catering page">Catering</a></li>
+                <li class="about"><a href="about.html" alt="link to about page">About</a></li>
+                <li class="index"><a href="../index.html" alt="link to home page">Home</a></li>
+                <!-- Logo -->
+                <li id="logo-li"><a href=""><img src="../img/logo-ico.png" alt="logo resembling a small pizza with Pizza Bella text overlaying image" id="logo-nav"></a></li>
+            
+            </ul>
+        </nav>
+        <div class="nav-dropdown-cont">
+            <ul class="mobile-nav">
+                <!-- Pages -->
+                <li class="index"><a href="../index.html" alt="link to home page">Home</a></li>
+                <li class="about"><a href="about.html" alt="link to about page">About</a></li>
+                <li class="catering"><a href="catering.html" alt="link to catering page">Catering</a></li>
+                <li class="newsletter"><a href="newsletter.html" alt="link to newsletter page">Newsletter</a></li>
+                <li class="contact"><a href="contact.html" alt="link to contact page">Contact</a></li>
+                <li class="order"><a href="orders.html" alt="link to order online page">Order Online</a></li>
+                <!-- Social -->
+                <li>
+                    <a href="" alt="external link to facebook page"><i class="fab fa-facebook-f"></i></a>
+                    <a href="" alt="external link to instagram page"><i class="fab fa-instagram"></i></a>
+                    <a href="" alt="external link to twitter page"><i class="fab fa-twitter"></i></a>
+                </li>
+            </ul>
+        </div>
+        <div class="newsletter-main">
+            <div class="newsletter-section">
+                <div class="newsletter-img-cont">
+                    <img src="../img/logo.png" alt="pizza bella logo large version"> 
+                </div>
+                <form action="" id="newsletter-form">
+                    <p>We'll keep you up to date with special offers and new menu items!
+                    </p>
+                    <hr>
+                    <div class="input-group">
+                        <label for="full name"> Full Name <span class="asterix">*</span></label>
+                        <input type="text" name="full name" id="fullname-input" value="">
+                        
+                    </div>
+                    <div class="input-group">
+                        <label for="email"> Email <span class="asterix">*</span></label>
+                        <input type="email" name="email" id="email-input">
+                    </div>
+                    <hr>
+                    <input type="checkbox" name="consent" id="checkbox"> <label for="consent" class="consent-label">I give my consent to be emailed
+                       <span class="asterix">*</span> </label>
+                    <button>Subscribe</button>
+                    <div class="form-submission-result">
+                        <!-- Will be added with jquery -->
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <ul>
+            <li><a href="" alt="external link to facebook page"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="" alt="external link to instagram page"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="" alt="external link to twitter page"><i class="fab fa-twitter"></i></a></li>
+        </ul>
+    </footer>
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/functions.js"></script>
+</body>
+</html>

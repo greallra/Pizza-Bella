@@ -1,0 +1,15 @@
+footer {
+    background: rgba(12,12,13,.78);
+}
+
+footer ul {
+    padding: 0;
+    max-width: 200px;
+    margin: auto;
+}
+footer ul li {
+    float: left;
+    width: 33.3%;
+    text-align: center;
+    margin-top: 50px;
+}

@@ -1,0 +1,46 @@
+.orders-main {
+    padding: 20px;
+    max-width: 900px;
+    margin: auto;
+}
+.orders-main h6 {
+    font-size: 30px;
+    color: #343031;
+    text-align: center;
+    
+}
+.orders-section {
+    padding: 20px;
+    margin: 20px 0;
+    border: 1px solid #343031;
+    min-height: 300px;
+}
+.orders-section:hover {
+    background-color: lightgray;
+    cursor: pointer;
+}
+.fa-shopping-basket, .fa-map-marker-alt {
+    display: block;
+    float: left;
+}
+.collection, .delivery  {
+    padding: 20px;
+}
+.orders-inner {
+    padding-left: 20px;
+    float: left;
+   
+}
+.orders-inner p {
+    text-align: left;
+}
+@media only screen and (min-width: 900px) {
+    .orders-section {
+        float: left;
+        width: 50%;
+        box-sizing: border-box;
+    }
+    .orders-section:nth-child(1) {
+        padding-right: 10px;
+    }
+}

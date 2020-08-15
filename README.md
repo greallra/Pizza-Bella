@@ -1,2 +1,2 @@
 Live Site Link:
-https://pizza-bella.netlify.app
+https://dbs-pizzabella.netlify.app/index.html
